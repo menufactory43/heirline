@@ -23,7 +23,7 @@ sud. Tu joues une **lignée**, pas un héros. Derrière le front, un soldat tomb
 définitive. Ton robot se plante alors en avant-poste et tient la ligne pour tout le serveur, et ton héritier reprend
 le nom, le robot et ce qu'il reste de la guerre.
 
-C'est un prototype, fait le soir, avec un serveur hébergé à la maison.
+C'est un prototype, fait le soir.
 
 ## Ce qu'il y a dedans
 

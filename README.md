@@ -23,7 +23,7 @@ centuries, spreads living biomass from its hives, and the colony of Anchorport h
 then plants itself as an outpost that holds the line for the whole server, and your heir picks up the name, the
 robot, and what is left of the war.
 
-It is a prototype, made in the evenings, with a server running at home.
+It is a prototype, made in the evenings.
 
 ## What's in it
 
