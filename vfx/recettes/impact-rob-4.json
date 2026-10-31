@@ -1,0 +1,45 @@
+{
+  "outline": "outside",
+  "fps": 20,
+  "frames": 8,
+  "loop": false,
+  "seed": 34,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "impact-rob-4",
+  "w": 28,
+  "h": 28,
+  "ramps": {
+    "main": "ice",
+    "spark": "arcane"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.1,
+      "r1": 0.8,
+      "th": 0.22
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 12,
+      "speed": [
+        2,
+        3
+      ],
+      "drag": 2.4,
+      "shape": "square"
+    },
+    {
+      "type": "flash",
+      "ramp": "$main",
+      "r": 0.4,
+      "dur": 0.12
+    }
+  ]
+}

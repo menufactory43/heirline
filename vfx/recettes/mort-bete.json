@@ -1,0 +1,40 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 12,
+  "loop": false,
+  "seed": 10,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "mort-bete",
+  "w": 24,
+  "h": 24,
+  "ramps": {
+    "main": "dust",
+    "spark": "blood"
+  },
+  "layers": [
+    {
+      "type": "puffs",
+      "ramp": "$main",
+      "count": 5,
+      "spread": 0.4,
+      "rise": 0.4,
+      "gain": 0.7
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 6,
+      "shape": "chunk",
+      "gravity": 2,
+      "speed": [
+        1,
+        2
+      ]
+    }
+  ]
+}

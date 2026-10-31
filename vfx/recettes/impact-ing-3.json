@@ -1,0 +1,66 @@
+{
+  "outline": "outside",
+  "fps": 20,
+  "frames": 10,
+  "loop": false,
+  "seed": 14,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "impact-ing-3",
+  "w": 16,
+  "h": 16,
+  "ramps": {
+    "main": "ice",
+    "spark": "lightning"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.1,
+      "r1": 0.85,
+      "th": 0.24,
+      "breakup": 0.6
+    },
+    {
+      "type": "star",
+      "ramp": "$spark",
+      "points": 7,
+      "r": 0.66,
+      "pop": 0.25
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 14,
+      "speed": [
+        2,
+        3.2
+      ],
+      "drag": 2.4,
+      "shape": "plus",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "flash",
+      "ramp": "$main",
+      "r": 0.47,
+      "dur": 0.12
+    },
+    {
+      "type": "bolt",
+      "ramp": "$spark",
+      "mode": "radial",
+      "count": 5,
+      "len": 0.8,
+      "hold": 2,
+      "fadeStart": 0.4
+    }
+  ]
+}

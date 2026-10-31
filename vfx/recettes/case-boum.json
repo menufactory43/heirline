@@ -1,0 +1,67 @@
+{
+  "outline": "outside",
+  "fps": 18,
+  "frames": 12,
+  "loop": false,
+  "seed": 49,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "case-boum",
+  "w": 32,
+  "h": 32,
+  "ramps": {
+    "main": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ],
+    "spark": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ]
+  },
+  "layers": [
+    {
+      "type": "burst",
+      "ramp": "$main",
+      "r1": 0.7,
+      "rough": 0.7,
+      "erode": 1
+    },
+    {
+      "type": "spikes",
+      "ramp": "$main",
+      "count": 3,
+      "spread": 0.6,
+      "hgt": [
+        0.4,
+        0.7
+      ],
+      "y": 0.3,
+      "grow": 0.2
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 6,
+      "shape": "drop",
+      "gravity": 1.5,
+      "speed": [
+        1.2,
+        2.2
+      ]
+    }
+  ]
+}

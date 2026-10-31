@@ -1,0 +1,83 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 7,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-bro-4",
+  "w": 18,
+  "h": 8,
+  "ramps": {
+    "main": "void",
+    "spark": "arcane"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.66,
+      "len": 3.0375,
+      "speed": 2,
+      "x": 1.5,
+      "rough": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 15,
+      "dir": 180,
+      "spread": 30,
+      "speed": [
+        1,
+        2.2
+      ],
+      "life": [
+        0.3,
+        0.7
+      ],
+      "shape": "ring",
+      "x": 1.1,
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "orb",
+      "ramp": "$spark",
+      "r": 0.3,
+      "spin": 1,
+      "x": 1.5,
+      "gain": 0.75
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "orbit",
+      "count": 3,
+      "orbitR": 0.7,
+      "turns": 1,
+      "x": 1.5,
+      "shape": "diamond",
+      "life": [
+        0.6,
+        0.9
+      ]
+    },
+    {
+      "type": "bolt",
+      "ramp": "$spark",
+      "mode": "radial",
+      "count": 5,
+      "len": 0.8,
+      "x": 1.5,
+      "hold": 2,
+      "gain": 0.8
+    }
+  ]
+}

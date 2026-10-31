@@ -1,0 +1,55 @@
+{
+  "outline": "outside",
+  "fps": 12,
+  "frames": 8,
+  "loop": true,
+  "seed": 2,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "pj-acide",
+  "w": 12,
+  "h": 12,
+  "ramps": {
+    "main": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ],
+    "spark": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ]
+  },
+  "layers": [
+    {
+      "type": "orb",
+      "ramp": "$main",
+      "r": 0.55,
+      "spin": 1,
+      "pulse": 0.1,
+      "pulseRate": 2
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "fall",
+      "count": 3,
+      "life": [
+        0.4,
+        0.8
+      ],
+      "shape": "drop"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 4,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "pj-epine",
+  "w": 16,
+  "h": 8,
+  "ramps": {
+    "main": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ],
+    "spark": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ]
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.5,
+      "len": 2.6,
+      "speed": 2,
+      "x": 1.25,
+      "rough": 0.8
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 4,
+      "dir": 180,
+      "spread": 30,
+      "life": [
+        0.3,
+        0.6
+      ],
+      "shape": "shard",
+      "x": 0.2
+    }
+  ]
+}

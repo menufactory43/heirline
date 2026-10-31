@@ -1,0 +1,29 @@
+{
+  "outline": "none",
+  "fps": 12,
+  "frames": 12,
+  "loop": true,
+  "seed": 2,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "bouclier",
+  "w": 32,
+  "h": 32,
+  "ramps": {
+    "main": "frost"
+  },
+  "layers": [
+    {
+      "type": "bubble",
+      "ramp": "$main",
+      "r": 0.86,
+      "th": 0.08,
+      "hex": 0.45,
+      "cell": 0.2,
+      "fill": 0.14,
+      "shimmer": 1
+    }
+  ]
+}

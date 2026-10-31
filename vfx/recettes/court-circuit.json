@@ -1,0 +1,42 @@
+{
+  "outline": "outside",
+  "fps": 18,
+  "frames": 10,
+  "loop": false,
+  "seed": 75,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "court-circuit",
+  "w": 64,
+  "h": 64,
+  "ramps": {
+    "main": "lightning",
+    "spark": "arcane"
+  },
+  "layers": [
+    {
+      "type": "bolt",
+      "ramp": "$main",
+      "mode": "radial",
+      "count": 7,
+      "len": 0.95,
+      "hold": 1,
+      "thick": 1
+    },
+    {
+      "type": "ring",
+      "ramp": "$spark",
+      "r0": 0.1,
+      "r1": 0.9,
+      "th": 0.16
+    },
+    {
+      "type": "flash",
+      "ramp": "$main",
+      "r": 0.4,
+      "dur": 0.12
+    }
+  ]
+}

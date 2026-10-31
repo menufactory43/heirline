@@ -1,0 +1,38 @@
+{
+  "outline": "none",
+  "fps": 10,
+  "frames": 12,
+  "loop": true,
+  "seed": 17,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "avantposte-veille",
+  "w": 40,
+  "h": 20,
+  "ramps": {
+    "main": [
+      "#08141f",
+      "#0f2a40",
+      "#145a7a",
+      "#1e90b0",
+      "#4fd0e8",
+      "#a8f4ff",
+      "#f0ffff"
+    ]
+  },
+  "layers": [
+    {
+      "type": "glyph",
+      "ramp": "$main",
+      "r": 0.95,
+      "star": 6,
+      "runes": 6,
+      "ticks": 18,
+      "draw": 0,
+      "spin": 1,
+      "gain": 0.55
+    }
+  ]
+}

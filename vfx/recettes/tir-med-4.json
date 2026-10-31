@@ -1,0 +1,81 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 7,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-med-4",
+  "w": 28,
+  "h": 12,
+  "ramps": {
+    "main": [
+      "#08160c",
+      "#0f3418",
+      "#1a5e26",
+      "#2e9a3a",
+      "#6ad66a",
+      "#c0f7b0",
+      "#ffffff"
+    ],
+    "spark": "holy"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.66,
+      "len": 3.1500000000000004,
+      "speed": 2,
+      "x": 1.5833333333333335,
+      "rough": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 15,
+      "dir": 180,
+      "spread": 30,
+      "speed": [
+        1,
+        2.2
+      ],
+      "life": [
+        0.3,
+        0.7
+      ],
+      "shape": "cross",
+      "x": 1.1833333333333336,
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "orb",
+      "ramp": "$spark",
+      "r": 0.3,
+      "spin": 1,
+      "x": 1.5833333333333335,
+      "gain": 0.75
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "orbit",
+      "count": 3,
+      "orbitR": 0.7,
+      "turns": 1,
+      "x": 1.5833333333333335,
+      "shape": "diamond",
+      "life": [
+        0.6,
+        0.9
+      ]
+    }
+  ]
+}

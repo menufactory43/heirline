@@ -1,0 +1,38 @@
+{
+  "outline": "none",
+  "fps": 12,
+  "frames": 16,
+  "loop": true,
+  "seed": 13,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tele-glyphe",
+  "w": 64,
+  "h": 64,
+  "ramps": {
+    "main": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ]
+  },
+  "layers": [
+    {
+      "type": "glyph",
+      "ramp": "$main",
+      "r": 0.95,
+      "star": 7,
+      "runes": 10,
+      "ticks": 28,
+      "draw": 0,
+      "spin": 1,
+      "gain": 0.8
+    }
+  ]
+}

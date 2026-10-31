@@ -1,0 +1,38 @@
+{
+  "outline": "none",
+  "fps": 20,
+  "frames": 8,
+  "loop": false,
+  "seed": 10,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "esquive",
+  "w": 32,
+  "h": 20,
+  "ramps": {
+    "main": "wind",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "streaks",
+      "ramp": "$main",
+      "mode": "speed",
+      "count": 6,
+      "len": 1.2,
+      "spanY": 0.7,
+      "angle": 180
+    },
+    {
+      "type": "puffs",
+      "ramp": "$main",
+      "count": 4,
+      "spread": 0.3,
+      "rise": 0.2,
+      "gain": 0.6,
+      "x": -0.5
+    }
+  ]
+}

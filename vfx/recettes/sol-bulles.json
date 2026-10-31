@@ -1,0 +1,39 @@
+{
+  "outline": "none",
+  "fps": 10,
+  "frames": 12,
+  "loop": true,
+  "seed": 46,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "sol-bulles",
+  "w": 16,
+  "h": 16,
+  "ramps": {
+    "main": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ]
+  },
+  "layers": [
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "ambient",
+      "count": 6,
+      "shape": "bubble",
+      "life": [
+        0.5,
+        0.9
+      ],
+      "gain": 0.9
+    }
+  ]
+}

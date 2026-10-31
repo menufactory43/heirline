@@ -1,0 +1,71 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 16,
+  "loop": false,
+  "seed": 12,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "boum-eden",
+  "w": 64,
+  "h": 64,
+  "ramps": {
+    "main": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ],
+    "spark": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ]
+  },
+  "layers": [
+    {
+      "type": "burst",
+      "ramp": "$main",
+      "r1": 0.8,
+      "rough": 0.8,
+      "wobble": 0.5,
+      "erode": 1
+    },
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.2,
+      "r1": 1,
+      "th": 0.14,
+      "breakup": 0.8,
+      "squash": 0.6
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 16,
+      "shape": "drop",
+      "gravity": 1.2,
+      "speed": [
+        1.6,
+        3
+      ]
+    },
+    {
+      "type": "flash",
+      "ramp": "$spark",
+      "r": 0.5,
+      "dur": 0.1
+    }
+  ]
+}

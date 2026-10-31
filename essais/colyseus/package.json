@@ -1,0 +1,1 @@
+{"name":"essai-colyseus","private":true,"type":"module","dependencies":{"@colyseus/schema":"^5.0.42","@colyseus/sdk":"^0.18.8","@colyseus/ws-transport":"^0.18.4","colyseus":"^0.18.10","phaser":"^4.2.1"},"devDependencies":{"@types/node":"^26.6.6","tsx":"^4.23.15","typescript":"^7.0.2","vite":"^8.3.5"}}

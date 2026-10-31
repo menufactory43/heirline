@@ -1,0 +1,39 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 4,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-dem-1",
+  "w": 12,
+  "h": 7,
+  "ramps": {
+    "main": "fire",
+    "spark": "ash"
+  },
+  "layers": [
+    {
+      "type": "puffs",
+      "ramp": "smoke",
+      "count": 3,
+      "spread": 0.3,
+      "rise": 0.1,
+      "dir": 180,
+      "x": -0.03571428571428581,
+      "gain": 0.5
+    },
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.54,
+      "len": 2.3142857142857145,
+      "speed": 2,
+      "x": 0.9642857142857142,
+      "rough": 0.55
+    }
+  ]
+}

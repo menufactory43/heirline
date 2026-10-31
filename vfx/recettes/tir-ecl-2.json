@@ -1,0 +1,51 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 5,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-ecl-2",
+  "w": 26,
+  "h": 5,
+  "ramps": {
+    "main": "ice",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.58,
+      "len": 7.0200000000000005,
+      "speed": 2,
+      "x": 4.45,
+      "rough": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 9,
+      "dir": 180,
+      "spread": 30,
+      "speed": [
+        1,
+        2.2
+      ],
+      "life": [
+        0.3,
+        0.7
+      ],
+      "shape": "dot",
+      "x": 4.05,
+      "size": [
+        1,
+        1
+      ]
+    }
+  ]
+}

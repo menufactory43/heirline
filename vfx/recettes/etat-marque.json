@@ -1,0 +1,45 @@
+{
+  "outline": "none",
+  "fps": 10,
+  "frames": 8,
+  "loop": true,
+  "seed": 66,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "etat-marque",
+  "w": 16,
+  "h": 16,
+  "ramps": {
+    "main": "blood",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "glyph",
+      "ramp": "$main",
+      "r": 0.8,
+      "star": 0,
+      "rings": [
+        [
+          1,
+          0.8,
+          0.5
+        ]
+      ],
+      "ticks": 8,
+      "runes": 0,
+      "draw": 0.01,
+      "spin": 1
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "implode",
+      "count": 4,
+      "shape": "dot",
+      "implodeR": 0.8
+    }
+  ]
+}

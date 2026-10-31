@@ -1,0 +1,47 @@
+[
+ {
+  "techno": "colyseus",
+  "clients": 1,
+  "cpu_%": 2,
+  "mem_Mo": 100,
+  "tick_moy_ms": 50.0,
+  "tick_ecart_ms": 8.58,
+  "tick_max_ms": 53.2,
+  "montant_ko_s": 0.1,
+  "descendant_ko_s": 1.11,
+  "confirmation_p50_ms": 103.9,
+  "confirmation_p95_ms": 156,
+  "maj_ecart_ms": 0.8,
+  "maj_p95_ms": 52.7
+ },
+ {
+  "techno": "colyseus",
+  "clients": 50,
+  "cpu_%": 10,
+  "mem_Mo": 119,
+  "tick_moy_ms": 50.0,
+  "tick_ecart_ms": 8.81,
+  "tick_max_ms": 53.6,
+  "montant_ko_s": 0.1,
+  "descendant_ko_s": 56.23,
+  "confirmation_p50_ms": 104,
+  "confirmation_p95_ms": 155.5,
+  "maj_ecart_ms": 2.4,
+  "maj_p95_ms": 55.1
+ },
+ {
+  "techno": "colyseus",
+  "clients": 100,
+  "cpu_%": 12,
+  "mem_Mo": 144,
+  "tick_moy_ms": 50.0,
+  "tick_ecart_ms": 8.9,
+  "tick_max_ms": 53.2,
+  "montant_ko_s": 0.1,
+  "descendant_ko_s": 105.59,
+  "confirmation_p50_ms": 129.55,
+  "confirmation_p95_ms": 155.15,
+  "maj_ecart_ms": 2.8,
+  "maj_p95_ms": 56.2
+ }
+]

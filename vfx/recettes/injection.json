@@ -1,0 +1,68 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 16,
+  "loop": false,
+  "seed": 5,
+  "pivot": [
+    0.5,
+    0.6
+  ],
+  "name": "injection",
+  "w": 128,
+  "h": 72,
+  "ramps": {
+    "main": "nature",
+    "spark": "holy"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.15,
+      "r1": 1.4,
+      "th": 0.12,
+      "squash": 0.5,
+      "y": 0.2,
+      "breakup": 0.5
+    },
+    {
+      "type": "glyph",
+      "ramp": "$spark",
+      "r": 0.55,
+      "squash": 0.5,
+      "y": 0.2,
+      "star": 0,
+      "runes": 8,
+      "ticks": 16,
+      "draw": 0.3,
+      "gain": 0.6
+    },
+    {
+      "type": "pillar",
+      "ramp": "$spark",
+      "w": 0.18,
+      "hgt": 1.1,
+      "y": 0.25,
+      "gain": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "rise",
+      "count": 14,
+      "shape": "cross",
+      "speed": [
+        0.6,
+        1.2
+      ],
+      "life": [
+        0.6,
+        1
+      ],
+      "areaX": 1.1,
+      "areaY": 0.3,
+      "y": 0.2
+    }
+  ]
+}

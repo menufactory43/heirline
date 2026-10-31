@@ -1,0 +1,57 @@
+{
+  "outline": "outside",
+  "fps": 18,
+  "frames": 12,
+  "loop": false,
+  "seed": 9,
+  "pivot": [
+    0.5,
+    0.7
+  ],
+  "name": "tourelle",
+  "w": 40,
+  "h": 32,
+  "ramps": {
+    "main": "steel",
+    "spark": "gold"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.1,
+      "r1": 1,
+      "th": 0.14,
+      "squash": 0.4,
+      "y": 0.4
+    },
+    {
+      "type": "cracks",
+      "ramp": "$main",
+      "count": 5,
+      "len": 0.7,
+      "y": 0.4,
+      "gain": 0.7
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 10,
+      "shape": "square",
+      "gravity": 2,
+      "speed": [
+        1.5,
+        2.5
+      ],
+      "y": 0.3
+    },
+    {
+      "type": "flash",
+      "ramp": "$spark",
+      "r": 0.35,
+      "dur": 0.12,
+      "y": 0.3
+    }
+  ]
+}

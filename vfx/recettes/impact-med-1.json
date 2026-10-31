@@ -1,0 +1,50 @@
+{
+  "outline": "outside",
+  "fps": 20,
+  "frames": 10,
+  "loop": false,
+  "seed": 12,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "impact-med-1",
+  "w": 15,
+  "h": 15,
+  "ramps": {
+    "main": "nature",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.1,
+      "r1": 0.85,
+      "th": 0.24,
+      "breakup": 0.6
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 8,
+      "speed": [
+        2,
+        3.2
+      ],
+      "drag": 2.4,
+      "shape": "streak",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "flash",
+      "ramp": "$main",
+      "r": 0.38999999999999996,
+      "dur": 0.12
+    }
+  ]
+}

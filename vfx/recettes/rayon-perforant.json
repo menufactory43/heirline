@@ -1,0 +1,43 @@
+{
+  "outline": "outside",
+  "fps": 18,
+  "frames": 8,
+  "loop": false,
+  "seed": 81,
+  "pivot": [
+    0,
+    0.5
+  ],
+  "name": "rayon-perforant",
+  "w": 64,
+  "h": 12,
+  "ramps": {
+    "main": "ice",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "beam",
+      "ramp": "$main",
+      "len": 5.2,
+      "th": 0.5,
+      "cap": 0.6,
+      "grow": 0.12,
+      "x": -2.6
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 14,
+      "dir": 0,
+      "spread": 8,
+      "speed": [
+        2,
+        4
+      ],
+      "areaX": 2.5,
+      "x": 0
+    }
+  ]
+}

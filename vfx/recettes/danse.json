@@ -1,0 +1,92 @@
+{
+  "outline": "none",
+  "fps": 12,
+  "frames": 16,
+  "loop": true,
+  "seed": 21,
+  "pivot": [
+    0.5,
+    0.78
+  ],
+  "name": "danse",
+  "w": 32,
+  "h": 28,
+  "ramps": {
+    "main": "rainbow",
+    "spark": "rainbow"
+  },
+  "layers": [
+    {
+      "type": "glyph",
+      "ramp": "$main",
+      "r": 0.75,
+      "squash": 0.35,
+      "y": 0.55,
+      "rings": [
+        1,
+        0.7
+      ],
+      "star": 0,
+      "runes": 0,
+      "ticks": 16,
+      "draw": 0,
+      "spin": 1,
+      "gain": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "rise",
+      "count": 10,
+      "shape": "star",
+      "speed": [
+        0.8,
+        1.4
+      ],
+      "life": [
+        0.5,
+        0.9
+      ],
+      "areaX": 0.8,
+      "y": 0.3,
+      "twinkle": 1,
+      "size": [
+        2,
+        1
+      ],
+      "heat": [
+        1,
+        0.6
+      ]
+    },
+    {
+      "type": "particles",
+      "ramp": "hue:300",
+      "mode": "rise",
+      "count": 5,
+      "shape": "diamond",
+      "speed": [
+        0.6,
+        1.1
+      ],
+      "life": [
+        0.5,
+        0.9
+      ],
+      "areaX": 0.8,
+      "y": 0.3,
+      "seed": 3
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "orbit",
+      "count": 3,
+      "orbitR": 0.75,
+      "turns": 1,
+      "y": -0.1,
+      "shape": "diamond",
+      "squash": 0.5
+    }
+  ]
+}

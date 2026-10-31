@@ -1,0 +1,88 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 14,
+  "loop": false,
+  "seed": 45,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "sol-arrache",
+  "w": 32,
+  "h": 32,
+  "ramps": {
+    "main": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ],
+    "alt": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ],
+    "spark": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ]
+  },
+  "layers": [
+    {
+      "type": "cracks",
+      "ramp": "$alt",
+      "count": 6,
+      "len": 0.95,
+      "squash": 0.8,
+      "grow": 0.25
+    },
+    {
+      "type": "spikes",
+      "ramp": "$main",
+      "count": 3,
+      "spread": 0.5,
+      "hgt": [
+        0.5,
+        0.9
+      ],
+      "y": 0.4,
+      "grow": 0.25,
+      "hold": 0.5
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 12,
+      "shape": "chunk",
+      "gravity": 2,
+      "speed": [
+        1.4,
+        2.6
+      ],
+      "size": [
+        2,
+        1
+      ]
+    },
+    {
+      "type": "flash",
+      "ramp": "$spark",
+      "r": 0.4,
+      "dur": 0.1
+    }
+  ]
+}

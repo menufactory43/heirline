@@ -1,0 +1,42 @@
+{
+  "outline": "outside",
+  "fps": 20,
+  "frames": 10,
+  "loop": false,
+  "seed": 3,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "bouclier-pose",
+  "w": 40,
+  "h": 40,
+  "ramps": {
+    "main": "frost",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.9,
+      "r1": 0.5,
+      "th": 0.18,
+      "ease": "outQuart"
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "implode",
+      "count": 12,
+      "implodeR": 0.9,
+      "shape": "diamond"
+    },
+    {
+      "type": "flash",
+      "ramp": "$main",
+      "r": 0.5,
+      "dur": 0.14
+    }
+  ]
+}

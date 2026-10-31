@@ -1,0 +1,52 @@
+{
+  "outline": "outside",
+  "fps": 18,
+  "frames": 12,
+  "loop": false,
+  "seed": 6,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "adrenaline",
+  "w": 96,
+  "h": 64,
+  "ramps": {
+    "main": "gold",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.2,
+      "r1": 1.1,
+      "th": 0.1,
+      "squash": 0.55
+    },
+    {
+      "type": "streaks",
+      "ramp": "$spark",
+      "mode": "speed",
+      "count": 10,
+      "len": 0.6,
+      "spanY": 0.8
+    },
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "rise",
+      "count": 10,
+      "shape": "chevron",
+      "speed": [
+        1,
+        1.6
+      ],
+      "life": [
+        0.5,
+        0.9
+      ],
+      "areaX": 0.9
+    }
+  ]
+}

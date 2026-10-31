@@ -1,0 +1,44 @@
+{
+  "outline": "none",
+  "fps": 8,
+  "frames": 12,
+  "loop": true,
+  "seed": 61,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "zone-toxine",
+  "w": 64,
+  "h": 64,
+  "ramps": {
+    "main": "poison",
+    "spark": "nature"
+  },
+  "layers": [
+    {
+      "type": "puffs",
+      "ramp": "$main",
+      "count": 14,
+      "spread": 0.92,
+      "rise": 0.12,
+      "r0": 0.24,
+      "r1": 0.42,
+      "flat": 0.85,
+      "gain": 0.7
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "rise",
+      "count": 8,
+      "shape": "bubble",
+      "areaX": 0.8,
+      "areaY": 0.5,
+      "life": [
+        0.5,
+        1
+      ]
+    }
+  ]
+}

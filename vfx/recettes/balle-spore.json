@@ -1,0 +1,48 @@
+{
+  "outline": "outside",
+  "fps": 14,
+  "frames": 8,
+  "loop": true,
+  "seed": 41,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "balle-spore",
+  "w": 12,
+  "h": 12,
+  "ramps": {
+    "main": [
+      "#1a1404",
+      "#40300a",
+      "#7a5a10",
+      "#c09018",
+      "#ffd040",
+      "#fff09a",
+      "#ffffff"
+    ]
+  },
+  "outlineColor": "#1a1004",
+  "layers": [
+    {
+      "type": "orb",
+      "ramp": "$main",
+      "r": 0.58,
+      "spin": 1,
+      "pulse": 0.1,
+      "pulseRate": 2,
+      "gain": 1.1
+    },
+    {
+      "type": "star",
+      "ramp": "$main",
+      "points": 4,
+      "r": 0.75,
+      "inner": 0.2,
+      "pop": 0,
+      "hollow": 0,
+      "t1": 1,
+      "gain": 0.8
+    }
+  ]
+}

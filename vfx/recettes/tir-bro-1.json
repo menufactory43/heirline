@@ -1,0 +1,29 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 4,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-bro-1",
+  "w": 12,
+  "h": 5,
+  "ramps": {
+    "main": "arcane",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.54,
+      "len": 3.24,
+      "speed": 2,
+      "x": 1.65,
+      "rough": 0.55
+    }
+  ]
+}

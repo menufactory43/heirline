@@ -1,0 +1,19 @@
+Heirline
+Copyright (c) 2026 Praxeon (Gabriel). All rights reserved.
+
+The source code, game data, story, texts and original artwork in this repository are published so that people can
+read them and learn from them. Visible source does not mean open source: no licence is granted to copy, modify,
+redistribute, host or sell this work or derivative works, in whole or in part, without written permission.
+
+You may:
+- read the code and the documents, and link to them;
+- run the game locally for your own personal, non-commercial evaluation.
+
+Third-party material keeps its own licence:
+- outils/pixelfx/ : pixelfx by Patch (https://github.com/patch-gg/pixelfx), MIT licence, partly adapted from Hugo
+  Duprez's MIT effects. See outils/pixelfx/LICENSE and outils/pixelfx/NOTICE.md.
+- client/public/son/ : sounds and music under CC0 (public domain), by Kenney, Alexander Ehlers, Cleyton Kauffman,
+  SRG774, Juhani Junkala, cynicmusic, RandomMind and others. Credits in docs/sons.md.
+- npm dependencies (Phaser, Colyseus, etc.) are under their own licences.
+
+For any other use, contact: https://praxeongames.com

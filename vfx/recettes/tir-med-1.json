@@ -1,0 +1,29 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 4,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-med-1",
+  "w": 16,
+  "h": 6,
+  "ramps": {
+    "main": "nature",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.54,
+      "len": 3.6,
+      "speed": 2,
+      "x": 1.9166666666666665,
+      "rough": 0.55
+    }
+  ]
+}

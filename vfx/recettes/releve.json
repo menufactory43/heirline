@@ -1,0 +1,57 @@
+{
+  "outline": "outside",
+  "fps": 14,
+  "frames": 20,
+  "loop": false,
+  "seed": 14,
+  "pivot": [
+    0.5,
+    0.85
+  ],
+  "name": "releve",
+  "w": 48,
+  "h": 80,
+  "ramps": {
+    "main": "holy",
+    "spark": "frost"
+  },
+  "layers": [
+    {
+      "type": "pillar",
+      "ramp": "$main",
+      "w": 0.4,
+      "hgt": 1.9,
+      "y": 0.7,
+      "gain": 0.8
+    },
+    {
+      "type": "ring",
+      "ramp": "$spark",
+      "r0": 0.2,
+      "r1": 1,
+      "th": 0.12,
+      "squash": 0.35,
+      "y": 0.7
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "rise",
+      "count": 12,
+      "shape": "diamond",
+      "speed": [
+        1,
+        1.6
+      ],
+      "areaX": 0.5,
+      "y": 0.6
+    },
+    {
+      "type": "flash",
+      "ramp": "$main",
+      "r": 0.35,
+      "dur": 0.12,
+      "y": 0.6
+    }
+  ]
+}

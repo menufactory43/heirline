@@ -1,0 +1,43 @@
+{
+  "outline": "outside",
+  "fps": 18,
+  "frames": 8,
+  "loop": false,
+  "seed": 82,
+  "pivot": [
+    0,
+    0.5
+  ],
+  "name": "trait-percee",
+  "w": 64,
+  "h": 16,
+  "ramps": {
+    "main": "gold",
+    "spark": "solar"
+  },
+  "layers": [
+    {
+      "type": "streaks",
+      "ramp": "$main",
+      "mode": "speed",
+      "count": 6,
+      "len": 1.6,
+      "spanY": 0.6,
+      "speed": 2,
+      "angle": 180
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 10,
+      "dir": 180,
+      "spread": 20,
+      "speed": [
+        1,
+        2
+      ],
+      "areaX": 2
+    }
+  ]
+}

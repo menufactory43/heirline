@@ -1,0 +1,26 @@
+{
+  "outline": "none",
+  "fps": 14,
+  "frames": 8,
+  "loop": true,
+  "seed": 68,
+  "pivot": [
+    0.5,
+    0.85
+  ],
+  "name": "etat-feu",
+  "w": 14,
+  "h": 16,
+  "ramps": {
+    "main": "fire"
+  },
+  "layers": [
+    {
+      "type": "flame",
+      "ramp": "$main",
+      "w": 0.5,
+      "hgt": 1.1,
+      "gain": 0.85
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 7,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-fan-4",
+  "w": 32,
+  "h": 12,
+  "ramps": {
+    "main": "holy",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.66,
+      "len": 3.6,
+      "speed": 2,
+      "x": 1.9166666666666665,
+      "rough": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 15,
+      "dir": 180,
+      "spread": 30,
+      "speed": [
+        1,
+        2.2
+      ],
+      "life": [
+        0.3,
+        0.7
+      ],
+      "shape": "star",
+      "x": 1.5166666666666666,
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "orb",
+      "ramp": "$spark",
+      "r": 0.3,
+      "spin": 1,
+      "x": 1.9166666666666665,
+      "gain": 0.75
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "orbit",
+      "count": 3,
+      "orbitR": 0.7,
+      "turns": 1,
+      "x": 1.9166666666666665,
+      "shape": "diamond",
+      "life": [
+        0.6,
+        0.9
+      ]
+    }
+  ]
+}

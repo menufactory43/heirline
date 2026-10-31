@@ -1,0 +1,73 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 14,
+  "loop": false,
+  "seed": 7,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "mort-eden",
+  "w": 32,
+  "h": 32,
+  "ramps": {
+    "main": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ],
+    "alt": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ],
+    "spark": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ]
+  },
+  "layers": [
+    {
+      "type": "burst",
+      "ramp": "$main",
+      "r1": 0.7,
+      "rough": 0.8,
+      "wobble": 0.6,
+      "erode": 1
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 12,
+      "shape": "drop",
+      "gravity": 1.6,
+      "speed": [
+        1.4,
+        2.6
+      ]
+    },
+    {
+      "type": "puffs",
+      "ramp": "$alt",
+      "count": 4,
+      "t0": 0.3,
+      "spread": 0.4,
+      "gain": 0.5
+    }
+  ]
+}

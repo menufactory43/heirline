@@ -1,0 +1,66 @@
+{
+  "outline": "outside",
+  "fps": 18,
+  "frames": 14,
+  "loop": false,
+  "seed": 48,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "anneau-boum",
+  "w": 96,
+  "h": 96,
+  "ramps": {
+    "main": [
+      "#1a0614",
+      "#4a0f3a",
+      "#8a1a6a",
+      "#d0359a",
+      "#ff6bd8",
+      "#ffc0f0",
+      "#ffffff"
+    ],
+    "alt": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ],
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.4,
+      "r1": 1,
+      "th": 0.3,
+      "breakup": 0.5,
+      "ease": "outQuart"
+    },
+    {
+      "type": "ring",
+      "ramp": "$alt",
+      "r0": 0.3,
+      "r1": 0.85,
+      "th": 0.18,
+      "breakup": 0.8,
+      "t0": 0.1
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 14,
+      "shape": "diamond",
+      "speed": [
+        1.8,
+        3
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 8,
+  "loop": false,
+  "seed": 80,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tapis",
+  "w": 32,
+  "h": 32,
+  "ramps": {
+    "main": "fire",
+    "spark": "smoke"
+  },
+  "layers": [
+    {
+      "type": "puffs",
+      "ramp": "$spark",
+      "count": 5,
+      "spread": 0.4
+    },
+    {
+      "type": "flash",
+      "ramp": "$main",
+      "r": 0.3,
+      "dur": 0.2
+    }
+  ]
+}

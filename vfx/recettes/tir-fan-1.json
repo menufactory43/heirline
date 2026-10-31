@@ -1,0 +1,29 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 4,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-fan-1",
+  "w": 18,
+  "h": 6,
+  "ramps": {
+    "main": "solar",
+    "spark": "gold"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.54,
+      "len": 4.050000000000001,
+      "speed": 2,
+      "x": 2.25,
+      "rough": 0.55
+    }
+  ]
+}

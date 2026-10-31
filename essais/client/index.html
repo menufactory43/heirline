@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Essai réseau Heirline</title>
+<style>
+html,body{margin:0;height:100%;background:#0b0d12;overflow:hidden;touch-action:none;font:12px/1.3 ui-monospace,monospace;color:#cfe}
+#hud{position:fixed;left:8px;top:8px;white-space:pre;pointer-events:none;z-index:5;text-shadow:0 1px 0 #000}
+.stick{position:fixed;bottom:24px;width:130px;height:130px;border-radius:50%;background:#ffffff14;border:2px solid #ffffff30;z-index:4}
+.stick b{position:absolute;left:40px;top:40px;width:50px;height:50px;border-radius:50%;background:#ffffff50}
+#sl{left:24px}#sr{right:24px}
+#menu{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;z-index:9;background:#0b0d12}
+#menu a{color:#0b0d12;background:#7fd;padding:12px 18px;border-radius:8px;text-decoration:none;font-size:16px;min-width:260px;text-align:center}
+</style></head>
+<body>
+<div id="hud"></div>
+<div class="stick" id="sl"><b></b></div><div class="stick" id="sr"><b></b></div>
+<script type="module" src="/src/main.ts"></script>
+</body></html>

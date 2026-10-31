@@ -1,0 +1,55 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 24,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-rob-4",
+  "w": 26,
+  "h": 10,
+  "ramps": {
+    "main": "ice",
+    "spark": "arcane"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.5,
+      "len": 3.9000000000000004,
+      "speed": 2,
+      "x": 1.9000000000000001,
+      "rough": 0.25
+    },
+    {
+      "type": "orb",
+      "ramp": "$spark",
+      "r": 0.3,
+      "spin": 1,
+      "x": 1.9000000000000001,
+      "gain": 0.7
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 6,
+      "dir": 180,
+      "spread": 25,
+      "speed": [
+        1,
+        2
+      ],
+      "life": [
+        0.3,
+        0.6
+      ],
+      "shape": "square",
+      "x": 1.4000000000000001
+    }
+  ]
+}

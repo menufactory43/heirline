@@ -1,0 +1,32 @@
+{
+  "outline": "none",
+  "fps": 10,
+  "frames": 8,
+  "loop": true,
+  "seed": 67,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "etat-etourdi",
+  "w": 18,
+  "h": 10,
+  "ramps": {
+    "main": "gold"
+  },
+  "layers": [
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "orbit",
+      "count": 3,
+      "orbitR": 0.75,
+      "turns": 1,
+      "shape": "star",
+      "life": [
+        1,
+        1
+      ]
+    }
+  ]
+}

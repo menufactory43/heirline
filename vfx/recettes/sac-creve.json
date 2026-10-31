@@ -1,0 +1,88 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 18,
+  "loop": false,
+  "seed": 51,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "sac-creve",
+  "w": 64,
+  "h": 64,
+  "ramps": {
+    "main": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ],
+    "alt": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ],
+    "spark": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ]
+  },
+  "layers": [
+    {
+      "type": "puffs",
+      "ramp": "$alt",
+      "count": 7,
+      "t0": 0.2,
+      "spread": 0.5,
+      "rise": 0.4,
+      "gain": 0.6
+    },
+    {
+      "type": "burst",
+      "ramp": "$main",
+      "r1": 0.75,
+      "rough": 0.8,
+      "wobble": 0.6,
+      "erode": 1
+    },
+    {
+      "type": "ring",
+      "ramp": "$alt",
+      "r0": 0.15,
+      "r1": 1,
+      "th": 0.14,
+      "breakup": 0.7
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 24,
+      "shape": "drop",
+      "gravity": 1.6,
+      "speed": [
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "type": "flash",
+      "ramp": "$main",
+      "r": 0.5,
+      "dur": 0.1
+    }
+  ]
+}

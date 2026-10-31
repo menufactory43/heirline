@@ -1,0 +1,61 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 5,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-dem-2",
+  "w": 14,
+  "h": 8,
+  "ramps": {
+    "main": "fire",
+    "spark": "gold"
+  },
+  "layers": [
+    {
+      "type": "puffs",
+      "ramp": "smoke",
+      "count": 3,
+      "spread": 0.3,
+      "rise": 0.1,
+      "dir": 180,
+      "x": 0,
+      "gain": 0.5
+    },
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.58,
+      "len": 2.3625000000000003,
+      "speed": 2,
+      "x": 1,
+      "rough": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 9,
+      "dir": 180,
+      "spread": 30,
+      "speed": [
+        1,
+        2.2
+      ],
+      "life": [
+        0.3,
+        0.7
+      ],
+      "shape": "dot",
+      "x": 0.6,
+      "size": [
+        1,
+        1
+      ]
+    }
+  ]
+}

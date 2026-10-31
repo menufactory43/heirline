@@ -1,0 +1,55 @@
+{
+  "outline": "outside",
+  "fps": 18,
+  "frames": 10,
+  "loop": false,
+  "seed": 5,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "impact-acide",
+  "w": 20,
+  "h": 20,
+  "ramps": {
+    "main": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ],
+    "spark": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ]
+  },
+  "layers": [
+    {
+      "type": "burst",
+      "ramp": "$main",
+      "r1": 0.6,
+      "rough": 0.7,
+      "erode": 1
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 8,
+      "shape": "drop",
+      "gravity": 2,
+      "speed": [
+        1.2,
+        2.2
+      ]
+    }
+  ]
+}

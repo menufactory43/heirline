@@ -1,0 +1,66 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 14,
+  "loop": false,
+  "seed": 44,
+  "pivot": [
+    0.5,
+    0.85
+  ],
+  "name": "mur-pousse",
+  "w": 24,
+  "h": 32,
+  "ramps": {
+    "main": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ],
+    "spark": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ]
+  },
+  "layers": [
+    {
+      "type": "spikes",
+      "ramp": "$main",
+      "count": 5,
+      "spread": 0.95,
+      "hgt": [
+        1.1,
+        1.7
+      ],
+      "width": [
+        0.16,
+        0.24
+      ],
+      "y": 0.75,
+      "grow": 0.3,
+      "hold": 0.9
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 8,
+      "shape": "drop",
+      "gravity": 2,
+      "speed": [
+        1,
+        2
+      ],
+      "y": 0.5
+    }
+  ]
+}

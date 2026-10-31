@@ -1,0 +1,53 @@
+{
+  "outline": "none",
+  "fps": 10,
+  "frames": 12,
+  "loop": true,
+  "seed": 60,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "zone-champ",
+  "w": 64,
+  "h": 64,
+  "ramps": {
+    "main": "arcane",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "glyph",
+      "ramp": "$main",
+      "r": 0.95,
+      "star": 0,
+      "runes": 10,
+      "ticks": 32,
+      "draw": 0.01,
+      "spin": 0.25,
+      "gain": 0.55
+    },
+    {
+      "type": "bolt",
+      "ramp": "$spark",
+      "mode": "radial",
+      "count": 3,
+      "len": 0.9,
+      "hold": 3,
+      "gain": 0.5
+    },
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "ambient",
+      "count": 10,
+      "shape": "plus",
+      "area": 0.8,
+      "life": [
+        0.5,
+        1
+      ],
+      "gain": 0.7
+    }
+  ]
+}

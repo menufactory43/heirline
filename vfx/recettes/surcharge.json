@@ -1,0 +1,52 @@
+{
+  "outline": "outside",
+  "fps": 12,
+  "frames": 12,
+  "loop": true,
+  "seed": 7,
+  "pivot": [
+    0.5,
+    0.75
+  ],
+  "name": "surcharge",
+  "w": 28,
+  "h": 32,
+  "ramps": {
+    "main": "lightning",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "flame",
+      "ramp": "$main",
+      "w": 0.6,
+      "hgt": 1.2,
+      "hollow": 0.85,
+      "y": 0.5,
+      "speed": 2,
+      "gain": 0.8
+    },
+    {
+      "type": "bolt",
+      "ramp": "$spark",
+      "mode": "radial",
+      "count": 3,
+      "len": 0.7,
+      "hold": 2,
+      "y": 0.2
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "rise",
+      "count": 6,
+      "shape": "plus",
+      "life": [
+        0.4,
+        0.8
+      ],
+      "areaX": 0.5,
+      "y": 0.4
+    }
+  ]
+}

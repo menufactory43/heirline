@@ -1,0 +1,48 @@
+{
+  "outline": "outside",
+  "fps": 14,
+  "frames": 12,
+  "loop": false,
+  "seed": 76,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "filet",
+  "w": 48,
+  "h": 48,
+  "ramps": {
+    "main": "dust",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "glyph",
+      "ramp": "$main",
+      "r": 0.9,
+      "star": 0,
+      "rings": [
+        [
+          1,
+          0.66,
+          0.33
+        ]
+      ],
+      "ticks": 12,
+      "runes": 0,
+      "draw": 0.2,
+      "spin": 0
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 10,
+      "shape": "cross",
+      "speed": [
+        0.6,
+        1.2
+      ]
+    }
+  ]
+}

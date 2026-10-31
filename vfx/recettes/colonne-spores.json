@@ -1,0 +1,86 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 14,
+  "loop": false,
+  "seed": 47,
+  "pivot": [
+    0.5,
+    0.95
+  ],
+  "name": "colonne-spores",
+  "w": 32,
+  "h": 96,
+  "ramps": {
+    "main": [
+      "#1a1404",
+      "#40300a",
+      "#7a5a10",
+      "#c09018",
+      "#ffd040",
+      "#fff09a",
+      "#ffffff"
+    ],
+    "alt": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ],
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "pillar",
+      "ramp": "$main",
+      "w": 0.55,
+      "hgt": 5.4,
+      "y": 2.7,
+      "speed": 3,
+      "rough": 0.7,
+      "grow": 0.12,
+      "gain": 0.85
+    },
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "fall",
+      "count": 26,
+      "shape": "dot",
+      "speed": [
+        3,
+        5
+      ],
+      "life": [
+        0.3,
+        0.6
+      ],
+      "areaX": 0.6,
+      "y": -2.4,
+      "size": [
+        2,
+        1
+      ]
+    },
+    {
+      "type": "puffs",
+      "ramp": "$alt",
+      "count": 5,
+      "t0": 0.15,
+      "spread": 0.6,
+      "rise": 0.4,
+      "y": 2.6,
+      "gain": 0.7
+    },
+    {
+      "type": "flash",
+      "ramp": "$spark",
+      "r": 0.6,
+      "dur": 0.1,
+      "y": 2.6
+    }
+  ]
+}

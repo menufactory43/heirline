@@ -1,0 +1,29 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 4,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-ecl-1",
+  "w": 22,
+  "h": 4,
+  "ramps": {
+    "main": "ice",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.54,
+      "len": 7.425000000000001,
+      "speed": 2,
+      "x": 4.75,
+      "rough": 0.55
+    }
+  ]
+}

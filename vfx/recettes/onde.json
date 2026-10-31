@@ -1,0 +1,47 @@
+{
+  "outline": "outside",
+  "fps": 20,
+  "frames": 10,
+  "loop": false,
+  "seed": 73,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "onde",
+  "w": 96,
+  "h": 96,
+  "ramps": {
+    "main": "dust",
+    "spark": "gold"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.1,
+      "r1": 0.98,
+      "th": 0.16,
+      "squash": 0.6,
+      "breakup": 0.5
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 20,
+      "shape": "chunk",
+      "speed": [
+        2,
+        3.4
+      ],
+      "drag": 2.2
+    },
+    {
+      "type": "flash",
+      "ramp": "$spark",
+      "r": 0.3,
+      "dur": 0.12
+    }
+  ]
+}

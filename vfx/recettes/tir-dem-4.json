@@ -1,0 +1,83 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 7,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-dem-4",
+  "w": 18,
+  "h": 10,
+  "ramps": {
+    "main": "lava",
+    "spark": "solar"
+  },
+  "layers": [
+    {
+      "type": "puffs",
+      "ramp": "smoke",
+      "count": 3,
+      "spread": 0.3,
+      "rise": 0.1,
+      "dir": 180,
+      "x": 0.050000000000000044,
+      "gain": 0.5
+    },
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.66,
+      "len": 2.43,
+      "speed": 2,
+      "x": 1.05,
+      "rough": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 15,
+      "dir": 180,
+      "spread": 30,
+      "speed": [
+        1,
+        2.2
+      ],
+      "life": [
+        0.3,
+        0.7
+      ],
+      "shape": "chunk",
+      "x": 0.65,
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "orb",
+      "ramp": "$spark",
+      "r": 0.3,
+      "spin": 1,
+      "x": 1.05,
+      "gain": 0.75
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "orbit",
+      "count": 3,
+      "orbitR": 0.7,
+      "turns": 1,
+      "x": 1.05,
+      "shape": "diamond",
+      "life": [
+        0.6,
+        0.9
+      ]
+    }
+  ]
+}

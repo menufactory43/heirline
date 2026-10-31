@@ -1,0 +1,46 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 16,
+  "loop": false,
+  "seed": 13,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "quete",
+  "w": 44,
+  "h": 44,
+  "ramps": {
+    "main": "gold",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "rays",
+      "ramp": "$main",
+      "count": 10,
+      "r": 0.9,
+      "gain": 0.7
+    },
+    {
+      "type": "star",
+      "ramp": "$spark",
+      "points": 5,
+      "r": 0.55,
+      "pop": 0.3
+    },
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "burst",
+      "count": 10,
+      "shape": "coin",
+      "speed": [
+        1.4,
+        2.4
+      ],
+      "gravity": 1.2
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 6,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-med-3",
+  "w": 24,
+  "h": 10,
+  "ramps": {
+    "main": [
+      "#08160c",
+      "#0f3418",
+      "#1a5e26",
+      "#2e9a3a",
+      "#6ad66a",
+      "#c0f7b0",
+      "#ffffff"
+    ],
+    "spark": "holy"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.62,
+      "len": 3.24,
+      "speed": 2,
+      "x": 1.65,
+      "rough": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 12,
+      "dir": 180,
+      "spread": 30,
+      "speed": [
+        1,
+        2.2
+      ],
+      "life": [
+        0.3,
+        0.7
+      ],
+      "shape": "cross",
+      "x": 1.25,
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "orb",
+      "ramp": "$spark",
+      "r": 0.3,
+      "spin": 1,
+      "x": 1.65,
+      "gain": 0.75
+    }
+  ]
+}

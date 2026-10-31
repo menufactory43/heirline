@@ -1,0 +1,37 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 10,
+  "loop": false,
+  "seed": 72,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "leurre-fin",
+  "w": 32,
+  "h": 32,
+  "ramps": {
+    "main": "arcane",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "burst",
+      "count": 16,
+      "shape": "square",
+      "speed": [
+        1,
+        2
+      ]
+    },
+    {
+      "type": "flash",
+      "ramp": "$spark",
+      "r": 0.3,
+      "dur": 0.15
+    }
+  ]
+}

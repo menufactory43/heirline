@@ -1,0 +1,13 @@
+node_modules
+dist
+data
+*.log
+fnox.toml
+*.mp4
+target/
+.DS_Store
+son/sources/
+son/tmp/
+outils/pixelfx/records/
+# moteur Pixel VFX de Scenario : licence inconnue, gardé en local seulement (vfx/construire.mjs s'en passe)
+outils/pixel-vfx/

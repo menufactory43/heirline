@@ -1,0 +1,56 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 16,
+  "loop": false,
+  "seed": 16,
+  "pivot": [
+    0.5,
+    0.75
+  ],
+  "name": "avantposte",
+  "w": 48,
+  "h": 56,
+  "ramps": {
+    "main": [
+      "#08141f",
+      "#0f2a40",
+      "#145a7a",
+      "#1e90b0",
+      "#4fd0e8",
+      "#a8f4ff",
+      "#f0ffff"
+    ],
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "pillar",
+      "ramp": "$main",
+      "w": 0.3,
+      "hgt": 1.5,
+      "y": 0.5,
+      "gain": 0.7
+    },
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.1,
+      "r1": 1,
+      "th": 0.12,
+      "squash": 0.35,
+      "y": 0.5
+    },
+    {
+      "type": "glyph",
+      "ramp": "$spark",
+      "r": 0.6,
+      "squash": 0.35,
+      "y": 0.5,
+      "star": 6,
+      "runes": 6,
+      "draw": 0.35,
+      "gain": 0.6
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "outline": "none",
+  "fps": 8,
+  "frames": 8,
+  "loop": true,
+  "seed": 69,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "etat-ralenti",
+  "w": 16,
+  "h": 10,
+  "ramps": {
+    "main": "arcane"
+  },
+  "layers": [
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "fall",
+      "count": 4,
+      "shape": "plus",
+      "areaX": 0.7,
+      "life": [
+        0.6,
+        1
+      ],
+      "gain": 0.8
+    }
+  ]
+}

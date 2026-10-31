@@ -1,0 +1,55 @@
+{
+  "outline": "none",
+  "fps": 10,
+  "frames": 12,
+  "loop": true,
+  "seed": 63,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "zone-perfusion",
+  "w": 64,
+  "h": 64,
+  "ramps": {
+    "main": [
+      "#08160c",
+      "#0f3418",
+      "#1a5e26",
+      "#2e9a3a",
+      "#6ad66a",
+      "#c0f7b0",
+      "#ffffff"
+    ],
+    "spark": "holy"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.9,
+      "r1": 0.92,
+      "th": 0.06,
+      "thEnd": 0.05,
+      "breakup": 0.2,
+      "fade": 0,
+      "gain": 0.7
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "rise",
+      "count": 10,
+      "shape": "cross",
+      "area": 0.85,
+      "life": [
+        0.5,
+        1
+      ],
+      "speed": [
+        0.5,
+        0.9
+      ]
+    }
+  ]
+}

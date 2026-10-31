@@ -1,0 +1,45 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 6,
+  "loop": true,
+  "seed": 71,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "drone",
+  "w": 12,
+  "h": 10,
+  "ramps": {
+    "main": "steel",
+    "spark": [
+      "#08141f",
+      "#0f2a40",
+      "#145a7a",
+      "#1e90b0",
+      "#4fd0e8",
+      "#a8f4ff",
+      "#f0ffff"
+    ]
+  },
+  "layers": [
+    {
+      "type": "orb",
+      "ramp": "$main",
+      "r": 0.35,
+      "spin": 1,
+      "rim": 0.5
+    },
+    {
+      "type": "streaks",
+      "ramp": "$spark",
+      "mode": "flow",
+      "count": 2,
+      "r": 0.9,
+      "squash": 0.25,
+      "turns": 1,
+      "gain": 0.8
+    }
+  ]
+}

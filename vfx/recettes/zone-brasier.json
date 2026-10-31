@@ -1,0 +1,60 @@
+{
+  "outline": "none",
+  "fps": 12,
+  "frames": 12,
+  "loop": true,
+  "seed": 62,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "zone-brasier",
+  "w": 64,
+  "h": 64,
+  "ramps": {
+    "main": "fire",
+    "spark": "solar"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.88,
+      "r1": 0.92,
+      "th": 0.14,
+      "thEnd": 0.12,
+      "breakup": 0.4,
+      "fade": 0,
+      "gain": 0.8
+    },
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "rise",
+      "count": 18,
+      "shape": "drop",
+      "area": 0.92,
+      "life": [
+        0.4,
+        0.8
+      ],
+      "speed": [
+        0.6,
+        1.2
+      ],
+      "gain": 0.9
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "rise",
+      "count": 8,
+      "shape": "dot",
+      "area": 0.8,
+      "life": [
+        0.4,
+        0.8
+      ]
+    }
+  ]
+}

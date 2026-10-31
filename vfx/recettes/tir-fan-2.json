@@ -1,0 +1,51 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 5,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-fan-2",
+  "w": 22,
+  "h": 8,
+  "ramps": {
+    "main": "gold",
+    "spark": "gold"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.58,
+      "len": 3.7125000000000004,
+      "speed": 2,
+      "x": 2,
+      "rough": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 9,
+      "dir": 180,
+      "spread": 30,
+      "speed": [
+        1,
+        2.2
+      ],
+      "life": [
+        0.3,
+        0.7
+      ],
+      "shape": "dot",
+      "x": 1.6,
+      "size": [
+        1,
+        1
+      ]
+    }
+  ]
+}

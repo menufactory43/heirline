@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0b0d0b" />
+  <title>Heirline</title>
+  <link rel="preload" href="/pochoir.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <div id="game"></div>
+  <div id="touchzone"></div>
+  <div id="sticks"></div>
+
+  <div id="hud" class="cache">
+    <!-- en haut à gauche : la plaque du soldat (portrait, PV, XP, niveau, ferraille), le robot, les quêtes suivies -->
+    <div id="hg">
+      <div id="plaque-soldat" class="cadre plaque">
+        <div id="portrait" class="cadre crt"><canvas id="portrait-cv" width="16" height="16"></canvas><span id="niveau" class="puce"></span></div>
+        <div class="infos">
+          <div id="nom-soldat">—</div>
+          <div class="barre pv"><div id="pv" class="rempli"></div><span id="pv-txt"></span></div>
+          <div class="barre xp"><div id="xp" class="rempli"></div></div>
+          <div class="ligne"><span class="ferraille"><img class="ico" data-ico="ferraille" alt=""><b id="ferraille">0</b></span><span id="sac"></span></div>
+        </div>
+      </div>
+      <div id="plaque-robot" class="cadre plaque mince">
+        <img class="ico" data-ico="robot" alt=""><div class="robot-txt"><span id="etat-robot"></span><div class="barre robot"><div id="robot-pv" class="rempli"></div></div></div>
+      </div>
+      <div id="suivi"></div>
+      <div id="journal"></div>
+    </div>
+
+    <!-- en haut au centre : la zone (derrière / au-delà du front), le boss -->
+    <div id="hc">
+      <div id="zone" class="cadre tag"></div>
+      <div id="boss" class="cadre plaque eden cache"><div id="boss-nom"></div><div class="barre boss"><div id="boss-pv" class="rempli"></div></div></div>
+    </div>
+
+    <!-- en haut à droite : les menus, la minicarte (écran vert), l'heure et le temps -->
+    <div id="hd">
+      <div id="menu-icones">
+        <button data-ui="sac" class="cadre btn ico-btn" data-i18n-title="ui.html.sac_t"><img class="ico" data-ico="sac" alt=""><span data-i18n="ui.menu.sac"></span></button>
+        <button data-ui="journal" class="cadre btn ico-btn" data-i18n-title="ui.html.journal_t"><img class="ico" data-ico="journal" alt=""><span data-i18n="ui.journal.titre"></span></button>
+        <button data-ui="carte" class="cadre btn ico-btn" data-i18n-title="ui.html.carte_t"><img class="ico" data-ico="carte" alt=""><span data-i18n="ui.menu.carte"></span></button>
+        <button data-ui="menu" class="cadre btn ico-btn" data-i18n-title="ui.html.menu_t"><img class="ico" data-ico="menu" alt=""><span data-i18n="ui.menu.titre"></span></button>
+      </div>
+      <div id="bloc-carte">
+        <div class="cadre crt ecran-vert"><canvas id="minicarte" width="128" height="88"></canvas><div class="balayage"></div></div>
+        <div id="sous-carte" class="cadre plaque mince"><span id="horloge"></span><span id="ping"></span></div>
+      </div>
+    </div>
+
+    <div id="lieu-titre" class="cache"></div>
+    <div id="bandeau" class="cadre plaque cache"></div>
+
+    <!-- en bas à droite : l'action du moment, les compétences, l'esquive, le robot -->
+    <div id="action-ctx" class="cache"><button data-btn="action" id="btn-action" class="cadre btn chaud"><img class="ico" id="ico-action" data-ico="action" alt=""><span id="action-txt"></span></button></div>
+    <div id="boutons">
+      <button data-btn="monture" class="comp petite cadre btn" id="b-monture"><img class="ico" data-ico="monture" alt=""><span class="nom" data-i18n="ui.html.monter"></span><span class="cd"></span></button>
+      <button data-btn="ordre" class="comp petite cadre btn" id="b-ordre"><img class="ico" data-ico="ordre" alt=""><span class="nom" data-i18n="ui.html.ordre"></span><span class="cd"></span></button>
+      <button data-btn="sk0" class="comp cadre btn" id="b-sk0"><img class="ico" alt=""><span class="nom"></span><span class="cd"></span></button>
+      <button data-btn="sk1" class="comp cadre btn" id="b-sk1"><img class="ico" alt=""><span class="nom"></span><span class="cd"></span></button>
+      <button data-btn="sk2" class="comp cadre btn cache" id="b-sk2"><img class="ico" alt=""><span class="nom"></span><span class="cd"></span></button>
+      <button data-btn="dash" class="comp grande cadre btn" id="b-dash"><img class="ico" data-ico="esquive" alt=""><span class="nom" data-i18n="ui.html.esquive"></span><span class="cd"></span></button>
+    </div>
+    <div id="aide-clavier" data-i18n="ui.html.aide"></div>
+  </div>
+
+  <div id="ecran" class="cache"><div id="ecran-boite" class="cadre plaque"></div></div>
+
+  <div id="tourne"><div class="tourne-ico">⟳</div><div data-i18n="ui.html.tourne"></div><small data-i18n="ui.html.paysage"></small></div>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>

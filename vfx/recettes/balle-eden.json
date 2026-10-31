@@ -1,0 +1,38 @@
+{
+  "outline": "outside",
+  "fps": 14,
+  "frames": 8,
+  "loop": true,
+  "seed": 42,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "balle-eden",
+  "w": 12,
+  "h": 12,
+  "ramps": {
+    "main": [
+      "#1a0614",
+      "#4a0f3a",
+      "#8a1a6a",
+      "#d0359a",
+      "#ff6bd8",
+      "#ffc0f0",
+      "#ffffff"
+    ]
+  },
+  "outlineColor": "#1a0414",
+  "layers": [
+    {
+      "type": "orb",
+      "ramp": "$main",
+      "r": 0.64,
+      "spin": 1,
+      "pulse": 0.14,
+      "pulseRate": 2,
+      "gain": 1.15,
+      "rim": 0.45
+    }
+  ]
+}

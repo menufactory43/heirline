@@ -1,0 +1,45 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 22,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-rob-2",
+  "w": 20,
+  "h": 8,
+  "ramps": {
+    "main": [
+      "#08141f",
+      "#0f2a40",
+      "#145a7a",
+      "#1e90b0",
+      "#4fd0e8",
+      "#a8f4ff",
+      "#f0ffff"
+    ],
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.5,
+      "len": 3.75,
+      "speed": 2,
+      "x": 1.8,
+      "rough": 0.25
+    },
+    {
+      "type": "orb",
+      "ramp": "$spark",
+      "r": 0.3,
+      "spin": 1,
+      "x": 1.8,
+      "gain": 0.7
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "outline": "none",
+  "fps": 10,
+  "frames": 12,
+  "loop": true,
+  "seed": 64,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "zone-bastion",
+  "w": 64,
+  "h": 64,
+  "ramps": {
+    "main": "gold",
+    "spark": "holy"
+  },
+  "layers": [
+    {
+      "type": "glyph",
+      "ramp": "$main",
+      "r": 0.95,
+      "star": 6,
+      "runes": 6,
+      "ticks": 24,
+      "draw": 0.01,
+      "spin": 0.15,
+      "gain": 0.5
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "rise",
+      "count": 6,
+      "shape": "chevron",
+      "area": 0.7,
+      "life": [
+        0.5,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "outline": "none",
+  "fps": 12,
+  "frames": 12,
+  "loop": true,
+  "seed": 65,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "zone-blindage",
+  "w": 32,
+  "h": 32,
+  "ramps": {
+    "main": "steel",
+    "spark": [
+      "#08141f",
+      "#0f2a40",
+      "#145a7a",
+      "#1e90b0",
+      "#4fd0e8",
+      "#a8f4ff",
+      "#f0ffff"
+    ]
+  },
+  "layers": [
+    {
+      "type": "bubble",
+      "ramp": "$spark",
+      "r": 0.8,
+      "th": 0.08,
+      "hex": 0.45,
+      "fill": 0.12,
+      "gain": 0.85
+    }
+  ]
+}

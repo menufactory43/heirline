@@ -1,0 +1,54 @@
+{
+  "outline": "none",
+  "fps": 14,
+  "frames": 12,
+  "loop": true,
+  "seed": 15,
+  "pivot": [
+    0.5,
+    0.8
+  ],
+  "name": "gare",
+  "w": 24,
+  "h": 24,
+  "ramps": {
+    "main": "lightning",
+    "spark": [
+      "#08141f",
+      "#0f2a40",
+      "#145a7a",
+      "#1e90b0",
+      "#4fd0e8",
+      "#a8f4ff",
+      "#f0ffff"
+    ]
+  },
+  "layers": [
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "spray",
+      "count": 6,
+      "dir": -90,
+      "spread": 80,
+      "speed": [
+        1,
+        2
+      ],
+      "life": [
+        0.3,
+        0.7
+      ],
+      "gravity": 2,
+      "shape": "dot"
+    },
+    {
+      "type": "orb",
+      "ramp": "$spark",
+      "r": 0.18,
+      "spin": 1,
+      "y": 0.3,
+      "gain": 0.6
+    }
+  ]
+}

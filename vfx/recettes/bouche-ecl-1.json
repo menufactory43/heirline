@@ -1,0 +1,55 @@
+{
+  "outline": "outside",
+  "fps": 20,
+  "frames": 6,
+  "loop": false,
+  "seed": 8,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "bouche-ecl-1",
+  "w": 15,
+  "h": 15,
+  "ramps": {
+    "main": "ice",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "star",
+      "ramp": "$main",
+      "points": 4,
+      "r": 0.58,
+      "inner": 0.25,
+      "pop": 0.3
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 5,
+      "dir": 0,
+      "spread": 50,
+      "speed": [
+        1.6,
+        3
+      ],
+      "life": [
+        0.4,
+        0.8
+      ],
+      "shape": "streak",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "flash",
+      "ramp": "$main",
+      "r": 0.36,
+      "dur": 0.18
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 7,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "tir-ecl-4",
+  "w": 34,
+  "h": 7,
+  "ramps": {
+    "main": "white",
+    "spark": "holy"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.66,
+      "len": 6.557142857142857,
+      "speed": 2,
+      "x": 4.107142857142857,
+      "rough": 0.55
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "spray",
+      "count": 15,
+      "dir": 180,
+      "spread": 30,
+      "speed": [
+        1,
+        2.2
+      ],
+      "life": [
+        0.3,
+        0.7
+      ],
+      "shape": "diamond",
+      "x": 3.707142857142857,
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "orb",
+      "ramp": "$spark",
+      "r": 0.3,
+      "spin": 1,
+      "x": 4.107142857142857,
+      "gain": 0.75
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "orbit",
+      "count": 3,
+      "orbitR": 0.7,
+      "turns": 1,
+      "x": 4.107142857142857,
+      "shape": "diamond",
+      "life": [
+        0.6,
+        0.9
+      ]
+    }
+  ]
+}

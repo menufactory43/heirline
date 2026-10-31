@@ -1,0 +1,29 @@
+{
+  "outline": "outside",
+  "fps": 15,
+  "frames": 8,
+  "loop": true,
+  "seed": 3,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "pj-laser",
+  "w": 20,
+  "h": 6,
+  "ramps": {
+    "main": "blood",
+    "spark": "fire"
+  },
+  "layers": [
+    {
+      "type": "comet",
+      "ramp": "$main",
+      "r": 0.55,
+      "len": 4.5,
+      "speed": 2,
+      "x": 2.6,
+      "rough": 0.2
+    }
+  ]
+}

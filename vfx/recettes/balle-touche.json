@@ -1,0 +1,52 @@
+{
+  "outline": "outside",
+  "fps": 20,
+  "frames": 8,
+  "loop": false,
+  "seed": 43,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "balle-touche",
+  "w": 16,
+  "h": 16,
+  "ramps": {
+    "main": [
+      "#1a0614",
+      "#4a0f3a",
+      "#8a1a6a",
+      "#d0359a",
+      "#ff6bd8",
+      "#ffc0f0",
+      "#ffffff"
+    ],
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.1,
+      "r1": 0.9,
+      "th": 0.25
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 6,
+      "shape": "dot",
+      "speed": [
+        1.6,
+        2.6
+      ]
+    },
+    {
+      "type": "flash",
+      "ramp": "$spark",
+      "r": 0.4,
+      "dur": 0.15
+    }
+  ]
+}

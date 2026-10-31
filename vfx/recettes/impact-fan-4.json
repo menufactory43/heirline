@@ -1,0 +1,68 @@
+{
+  "outline": "outside",
+  "fps": 20,
+  "frames": 10,
+  "loop": false,
+  "seed": 15,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "impact-fan-4",
+  "w": 24,
+  "h": 24,
+  "ramps": {
+    "main": "holy",
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "glyph",
+      "ramp": "$main",
+      "r": 0.9,
+      "star": 5,
+      "runes": 6,
+      "ticks": 12,
+      "draw": 0.25,
+      "gain": 0.55,
+      "t1": 0.8
+    },
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.1,
+      "r1": 0.85,
+      "th": 0.24,
+      "breakup": 0.6
+    },
+    {
+      "type": "star",
+      "ramp": "$spark",
+      "points": 8,
+      "r": 0.73,
+      "pop": 0.25
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 17,
+      "speed": [
+        2,
+        3.2
+      ],
+      "drag": 2.4,
+      "shape": "star",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "flash",
+      "ramp": "$main",
+      "r": 0.51,
+      "dur": 0.12
+    }
+  ]
+}

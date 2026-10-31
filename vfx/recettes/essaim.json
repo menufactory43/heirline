@@ -1,0 +1,46 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 10,
+  "loop": false,
+  "seed": 79,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "essaim",
+  "w": 48,
+  "h": 48,
+  "ramps": {
+    "main": [
+      "#08141f",
+      "#0f2a40",
+      "#145a7a",
+      "#1e90b0",
+      "#4fd0e8",
+      "#a8f4ff",
+      "#f0ffff"
+    ],
+    "spark": "white"
+  },
+  "layers": [
+    {
+      "type": "ring",
+      "ramp": "$main",
+      "r0": 0.2,
+      "r1": 0.9,
+      "th": 0.1
+    },
+    {
+      "type": "particles",
+      "ramp": "$spark",
+      "mode": "burst",
+      "count": 12,
+      "shape": "square",
+      "speed": [
+        1,
+        2
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "outline": "outside",
+  "fps": 16,
+  "frames": 12,
+  "loop": false,
+  "seed": 11,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "eclosion",
+  "w": 28,
+  "h": 28,
+  "ramps": {
+    "main": [
+      "#0f1a08",
+      "#25400f",
+      "#3f6e14",
+      "#6fa81e",
+      "#a8e030",
+      "#d8ff6a",
+      "#f6ffd0"
+    ],
+    "spark": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ]
+  },
+  "layers": [
+    {
+      "type": "spikes",
+      "ramp": "$spark",
+      "count": 5,
+      "spread": 0.6,
+      "y": 0.3
+    },
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "burst",
+      "count": 8,
+      "shape": "bubble",
+      "speed": [
+        1,
+        2
+      ]
+    }
+  ]
+}

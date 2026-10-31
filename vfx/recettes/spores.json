@@ -1,0 +1,52 @@
+{
+  "outline": "none",
+  "fps": 10,
+  "frames": 24,
+  "loop": true,
+  "seed": 14,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "name": "spores",
+  "w": 96,
+  "h": 64,
+  "ramps": {
+    "main": [
+      "#1a0820",
+      "#3d1240",
+      "#6e1f6a",
+      "#a8358f",
+      "#d85bb0",
+      "#f2a0d4",
+      "#ffe0f2"
+    ]
+  },
+  "layers": [
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "ambient",
+      "count": 14,
+      "shape": "dot",
+      "life": [
+        0.5,
+        0.9
+      ],
+      "gain": 0.7
+    },
+    {
+      "type": "particles",
+      "ramp": "$main",
+      "mode": "rise",
+      "count": 5,
+      "shape": "bubble",
+      "life": [
+        0.4,
+        0.8
+      ],
+      "areaX": 1,
+      "gain": 0.6
+    }
+  ]
+}
